@@ -1,6 +1,6 @@
 <?php
+  namespace App\Entity;
 // require "../Autoloader.php";
-  namespace Admin;
 // Autoloader::register();
 class Admin extends User{
 

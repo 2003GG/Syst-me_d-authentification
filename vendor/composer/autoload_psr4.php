@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Admin' => array($baseDir . '/Entity/Admin.php'),
+    'App\\' => array($baseDir . '/app'),
 );

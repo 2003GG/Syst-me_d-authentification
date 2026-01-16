@@ -1,12 +1,7 @@
 {
     "autoload":{
         "psr-4": {
-            "Entity\\User" : "Entity/User.php",
-            "Entity\\Admin" : "Entity/Admin.php",
-            "Controler\\UserControler":"Controler/UserControler.php",
-            "UserReopsitory":"repository/UserRepository.php",
-            "DataConection":"config/dataConection.php",
-            "Services":"Services/serviceSingUp"
+            "App\\":"app/"
         }
     }
 }

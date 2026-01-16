@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@
         </div>
 
         <div class="space-y-4">
-            <form action="../Services/serviceSingUp.php" method="POST">
+            <form action="../../index.php" method="POST">
             <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
                 <input type="text" placeholder="John Doe" name="fullName" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
@@ -39,7 +39,7 @@
             </div>
           <br>
             <div>
-            <input type="submit" value="Sign Up" class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-3 rounded-lg hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition duration-200 shadow-lg">
+            <input type="submit" name="singUp" value="Sign Up" class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-3 rounded-lg hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition duration-200 shadow-lg">
                 </div>
            
             </form>
@@ -73,7 +73,7 @@
 
             <p class="text-center text-sm text-gray-400 mt-6">
                 Already have an account? 
-                <a href="#" class="text-blue-400 font-semibold hover:underline">Sign In</a>
+                <a href="logIn.php" class="text-blue-400 font-semibold hover:underline">Sign In</a>
             </p>
         </div>
     </div>

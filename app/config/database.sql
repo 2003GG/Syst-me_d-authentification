@@ -1,5 +1,5 @@
-CREATE DATABASE Systeme_authentification;
-USE Systeme_authentification;
+CREATE DATABASE authentification;
+USE authentification;
 CREATE Table Users(
 id INT PRIMARY KEY AUTO_INCREMENT,
 nom VARCHAR(20),
@@ -18,6 +18,4 @@ CREATE Table Company(
     id INT PRIMARY key AUTO_INCREMENT,
     nom VARCHAR(30)
 );
-SELECT * FROM Company;
-
 

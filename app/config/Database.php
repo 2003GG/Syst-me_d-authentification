@@ -1,11 +1,14 @@
 <?php
-namespace DataConection;
+namespace App\config;
+use PDOException;
+use PDO;
+
 class Database {
     private static $instance = null;
     private $pdo;
 
     private $host = 'localhost';
-    private $dbname = 'Systeme_authentification';
+    private $dbname = 'authentification';
     private $username = 'root';
     private $password = '';
 

@@ -14,18 +14,18 @@
         </div>
 
         <div class="space-y-4">
-            <form action="" method="POST">
+            <form action="../../index" method="POST">
             <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-                <input type="email" placeholder="you@example.com" name="emailLog" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+                <input type="email" placeholder="you@example.com" name="EmailLog" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
             </div>
 
             <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Password</label>
-                <input type="password" placeholder="••••••••" name="" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+                <input type="password" placeholder="••••••••" name="passwordLog" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
             </div>
 
-            <input type="submit" value="Log In" class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-3 rounded-lg hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition duration-200 shadow-lg">
+            <input type="submit" name="LogIn" value="Log In" class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-3 rounded-lg hover:from-blue-700 hover:to-cyan-700 transform hover:scale-105 transition duration-200 shadow-lg">
                 
         
             </form>
