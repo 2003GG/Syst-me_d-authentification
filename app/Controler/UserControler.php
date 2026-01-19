@@ -19,14 +19,15 @@ class UserControler
         $find = $this->ServiceSingUp->Find($nom, $email);
         if (empty($find)) {
             $this->ServiceSingUp->CreatUser($nom, $email, $password);
-            header("location : view/dashbord.php");
+            header("Location: ../view/dashbord.php");
         } else {
           echo "ERROR";
         }
     }
     public function logIn(){
-        $email=$_POST["EmailLog"];
-        $password=password_verify($_POST["passwordLog"]);
+        $email = $_POST["EmailLog"];
+        $password = $_POST["passwordLog"];
+// You need to fetch the user first, then verify the password
         $find=$this->ServiceSingUp->findLogIn($email,$password);
         if(!empty($find)){
             echo "correct";  

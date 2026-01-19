@@ -24,14 +24,16 @@ class UserRepository{
     }
     public function findUser($nom,$email){
         try{
-        $query='SELECT * FROM Users WHERE nom=:nom AND email=:email' ;
+        $query='SELECT * FROM Users Where emai=:email AND password=:password';
         $stmt=$this->connection->prepare($query);
         $stmt->bindParam(':nom',$nom);
         $stmt->bindParam(':email',$email);
         $stmt->execute();
+         return $stmt->fetchAll();
         }
         catch(PDOException $e){
         echo "Failed to find".$e->getMessage();
+        return null;
 
         }
     }
@@ -42,9 +44,12 @@ class UserRepository{
         $stmt->bindParam(":email",$email);
         $stmt->bindParam(":password",$password);
         $stmt->execute();
+        return $stmt->fetchAll();
+        
       }
       catch(PDOException $e){
          echo "Failed to find".$e->getMessage();
+         return null;
       }
 
     }

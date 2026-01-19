@@ -9,3 +9,8 @@ if (isset($_POST["singUp"])) {
 if (isset($_POST["LogIn"])) {
   $cont->logIn();
 }
+declare(strict_types=1);
+$pars= parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ;
+require "Route.php";
+$route=new Route();
+$route->add("/");
